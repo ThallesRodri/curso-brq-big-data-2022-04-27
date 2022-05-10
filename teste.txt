@@ -3,3 +3,4 @@ Estou alterando o arquivo novamente!
 Estou alterando o arquivo novamente 2222!
 Teste teste teste teste
 Fazendo merge na branch master do jeito "certo"
+teste
