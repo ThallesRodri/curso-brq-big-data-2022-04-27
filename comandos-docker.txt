@@ -1,0 +1,24 @@
+docker run <params> <nome-da-imagem>
+Ex: docker run --name c3 -p 80:80 strm/helloworld-http
+docker run é usado para criar (instanciar) o container pela primeira vez
+=====================================================================================
+docker ps : usado para listar os containers em execução
+passando o parâmetro -a , lista-se todos os containers (inclusive os parados)
+=====================================================================================
+docker start <NOME ou ID >
+docker start serve para iniciar um container já criado e que esteja parado
+=====================================================================================
+docker stop <NOME ou ID >
+docker stop serve para para um container em execução
+=====================================================================================
+docker rm <NOME ou ID >
+docker rm serve para remover um container já parado
+=====================================================================================
+docker exec -it <NOME ou ID > /bin/bash
+Ex: docker exec -it c2 /bin/bash
+docker exec serve para acessar o terminal de um container de interesse e que esteja 
+em execução
+=====================================================================================
+docker logs <NOME ou ID > 
+docker logs permite mostrar os logs de um container em execução
+====================================================================================
