@@ -22,3 +22,6 @@ em execução
 docker logs <NOME ou ID > 
 docker logs permite mostrar os logs de um container em execução
 ====================================================================================
+docker run --name python-mysql --network=python-mysql -it  python-mysql
+#colocando o network ele vai autoimatico para a rede selecuiona
+====================================================================================
