@@ -25,3 +25,13 @@ docker logs permite mostrar os logs de um container em execução
 docker run --name python-mysql --network=python-mysql -it  python-mysql
 #colocando o network ele vai autoimatico para a rede selecuiona
 ====================================================================================
+DOCKER-COMPOSE!!!!!!!!!
+-------------------------------------------------------------------------------------
+derrubar o compose
+docker-compose down
+====================================================================================
+buildar
+docker-compose build
+====================================================================================
+subir
+docker-compose up

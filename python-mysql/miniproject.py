@@ -2,7 +2,7 @@
 
 import mysql.connector
 # Pode acessar o host através do nome do container em vez do IP
-db = mysql.connector.connect(host='mysql', user='root', password='root', port=3306) #conexão com o BD
+db = mysql.connector.connect(host='mydb', user='root', password='root', port=3306) #conexão com o BD
 
 my_cursor=db.cursor()
 my_cursor.execute('DROP database IF EXISTS brq')
