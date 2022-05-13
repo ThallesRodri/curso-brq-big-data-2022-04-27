@@ -8,7 +8,7 @@ i = 0
 
 consumer = KafkaConsumer(
     'meu-topico-legal',
-    bootstrap_servers = ['localhost:9092'],
+    bootstrap_servers = ['172.19.0.3:9092'],
     value_deserializer= lambda x: loads( x.decode('utf-8'))
 )
 

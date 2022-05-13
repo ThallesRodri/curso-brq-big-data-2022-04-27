@@ -1,4 +1,5 @@
 docker run <params> <nome-da-imagem>
+docker run --name <> -it <>
 Ex: docker run --name c3 -p 80:80 strm/helloworld-http
 docker run é usado para criar (instanciar) o container pela primeira vez
 =====================================================================================
@@ -35,3 +36,9 @@ docker-compose build
 ====================================================================================
 subir
 docker-compose up
+
+=====================================================================
+build
+docker build -t consumer -f Dockerfile-consumer .
+
+******Anotação pra mim: TESTA REQUIREMENTS****************
