@@ -6,16 +6,15 @@ from json import loads
 total= 0
 i = 0
 
+####BD
+db = mysql.connector.connect(host='mysql', user='root', password='root', port=3306, database='brq_python') 
+
 consumer = KafkaConsumer(
     'meu-topico-legal',
     bootstrap_servers = ['singlenode_kafka_1:29092'],
     value_deserializer= lambda x: loads( x.decode('utf-8'))
 )
-
-####BD
-con = mysql.connector.connect(host='172.17.0.3', user='root', password='root', port=3306, database='brq_python') 
-
-my_cursor=con.cursor()
+my_cursor=db.cursor()
 #my_cursor.execute('DROP database IF EXISTS brq')
 #my_cursor.execute('CREATE DATABASE IF NOT EXISTS brq_python')
 #my_cursor.execute('use brq_python')
@@ -36,7 +35,7 @@ try:
         #my_cursor.execute(insert)
         my_cursor.execute(f'INSERT INTO minha_media(media) VALUES({media})')
 
-        con.commit()
+        db.commit()
 
 except KeyboardInterrupt:
     print('Fechando...')

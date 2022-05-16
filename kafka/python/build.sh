@@ -1,4 +1,5 @@
 #!/bin/bash
+#Arquivo de suporte para buildar os dockers de forma mais automática
 
 docker build -t consumer -f Dockerfile-consumer .
 

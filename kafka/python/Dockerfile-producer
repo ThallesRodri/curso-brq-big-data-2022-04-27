@@ -3,7 +3,7 @@ FROM python:3.9
 # Copiar os arquivos   antes de instalar as dependencias
 COPY . .
 
-# rodar um comando para instalar os modulos faltando  (mysql,kafka, pandas)
+# rodar um comando para instalar os modulos faltando  (mysql,kafka, pandas) através do requirements
 RUN pip install -r requirements.txt
 
 # executar via CMD os script python
