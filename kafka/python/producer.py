@@ -5,7 +5,7 @@ from kafka import KafkaProducer
 from time import sleep
 
 producer = KafkaProducer(
-    bootstrap_servers=['singlenode_kafka_1:9092'],
+    bootstrap_servers=['singlenode_kafka_1:29092'],
     value_serializer = lambda x: (str(x).encode('utf-8'))
 )
 
